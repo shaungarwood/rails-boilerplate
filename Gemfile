@@ -19,7 +19,8 @@ gem 'jbuilder'
 gem 'bootsnap', require: false
 
 group :development, :test do
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'pry'
+  gem 'pry-byebug'
   gem 'dotenv-rails'
   gem 'factory_bot_rails', '~> 6.2'
   gem 'rspec-rails', '~> 6.0.0'
@@ -28,11 +29,11 @@ end
 
 group :development do
   gem 'web-console'
+  gem 'pry-rails'
 end
 
 group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'webdrivers'
   gem 'simplecov', require: false
 end

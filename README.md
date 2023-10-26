@@ -11,6 +11,7 @@ Just to save me a little time for coding homework
     4. factorybot
     5. rspec
     6. rubocop
+    7. simplecov
 
 To get started:
 ```
@@ -18,3 +19,6 @@ cp .env.example .env.development && cp .env.example .env.test
 docker-compose up -d
 bundle exec rails db:create
 ```
+## Testing
+To show browser on capybara tests:
+`SHOW_BROWSER=1 bundle exec rspec spec/system/grain_jars/edit.html.erb_spec.rb`
